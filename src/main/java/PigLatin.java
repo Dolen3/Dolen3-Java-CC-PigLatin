@@ -16,7 +16,14 @@ public class PigLatin {
      * @param in A string.
      * @return the pig latin form of in.
      */
-    public String returnPigLatin(String in){
-        return "";
+    public String returnPigLatin(String in) {
+        
+        char firstChar = in.charAt(0);
+        
+        
+        String pigLatin = in.substring(1) + firstChar + "ay";
+        
+        
+        return pigLatin;
     }
 }
